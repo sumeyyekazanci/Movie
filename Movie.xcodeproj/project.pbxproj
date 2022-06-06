@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7817BB4284D0854008C2D82 /* ActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = D7817BB3284D0854008C2D82 /* ActivityIndicatorView */; };
+		D7817BB7284D4368008C2D82 /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7817BB6284D4368008C2D82 /* MovieDetailViewModel.swift */; };
+		D7817BB9284D4DAB008C2D82 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7817BB8284D4DAB008C2D82 /* Movie.swift */; };
 		D787BC80284AAEBF00E94780 /* MovieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D787BC7F284AAEBF00E94780 /* MovieApp.swift */; };
-		D787BC82284AAEBF00E94780 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D787BC81284AAEBF00E94780 /* ContentView.swift */; };
+		D787BC82284AAEBF00E94780 /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D787BC81284AAEBF00E94780 /* MovieView.swift */; };
 		D787BC84284AAEC100E94780 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D787BC83284AAEC100E94780 /* Assets.xcassets */; };
 		D787BC87284AAEC100E94780 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D787BC86284AAEC100E94780 /* Preview Assets.xcassets */; };
+		D787BC95284AB54A00E94780 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D787BC94284AB54A00E94780 /* MovieViewModel.swift */; };
+		D7A2CDBB284ACD5E00FC341F /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A2CDBA284ACD5E00FC341F /* MovieDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D7817BB5284D09C8008C2D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D7817BB6284D4368008C2D82 /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
+		D7817BB8284D4DAB008C2D82 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		D787BC7C284AAEBF00E94780 /* Movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D787BC7F284AAEBF00E94780 /* MovieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApp.swift; sourceTree = "<group>"; };
-		D787BC81284AAEBF00E94780 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D787BC81284AAEBF00E94780 /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
 		D787BC83284AAEC100E94780 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D787BC86284AAEC100E94780 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D787BC94284AB54A00E94780 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		D7A2CDBA284ACD5E00FC341F /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7817BB4284D0854008C2D82 /* ActivityIndicatorView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +62,10 @@
 		D787BC7E284AAEBF00E94780 /* Movie */ = {
 			isa = PBXGroup;
 			children = (
-				D787BC7F284AAEBF00E94780 /* MovieApp.swift */,
-				D787BC81284AAEBF00E94780 /* ContentView.swift */,
+				D7817BB5284D09C8008C2D82 /* Info.plist */,
+				D787BC8F284AAF9B00E94780 /* Model */,
+				D787BC8E284AAF9000E94780 /* ViewModel */,
+				D787BC8D284AAF7D00E94780 /* View */,
 				D787BC83284AAEC100E94780 /* Assets.xcassets */,
 				D787BC85284AAEC100E94780 /* Preview Content */,
 			);
@@ -65,6 +78,33 @@
 				D787BC86284AAEC100E94780 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D787BC8D284AAF7D00E94780 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D787BC81284AAEBF00E94780 /* MovieView.swift */,
+				D787BC7F284AAEBF00E94780 /* MovieApp.swift */,
+				D7A2CDBA284ACD5E00FC341F /* MovieDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D787BC8E284AAF9000E94780 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D787BC94284AB54A00E94780 /* MovieViewModel.swift */,
+				D7817BB6284D4368008C2D82 /* MovieDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D787BC8F284AAF9B00E94780 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7817BB8284D4DAB008C2D82 /* Movie.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +123,9 @@
 			dependencies = (
 			);
 			name = Movie;
+			packageProductDependencies = (
+				D7817BB3284D0854008C2D82 /* ActivityIndicatorView */,
+			);
 			productName = Movie;
 			productReference = D787BC7C284AAEBF00E94780 /* Movie.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +154,9 @@
 				Base,
 			);
 			mainGroup = D787BC73284AAEBF00E94780;
+			packageReferences = (
+				D7817BB2284D0854008C2D82 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */,
+			);
 			productRefGroup = D787BC7D284AAEBF00E94780 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +183,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D787BC82284AAEBF00E94780 /* ContentView.swift in Sources */,
+				D7A2CDBB284ACD5E00FC341F /* MovieDetailView.swift in Sources */,
+				D787BC95284AB54A00E94780 /* MovieViewModel.swift in Sources */,
+				D7817BB9284D4DAB008C2D82 /* Movie.swift in Sources */,
+				D7817BB7284D4368008C2D82 /* MovieDetailViewModel.swift in Sources */,
+				D787BC82284AAEBF00E94780 /* MovieView.swift in Sources */,
 				D787BC80284AAEBF00E94780 /* MovieApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,9 +320,11 @@
 				DEVELOPMENT_TEAM = 49ZRYYBXGV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Movie/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,9 +351,11 @@
 				DEVELOPMENT_TEAM = 49ZRYYBXGV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Movie/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,6 +393,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D7817BB2284D0854008C2D82 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ActivityIndicatorView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D7817BB3284D0854008C2D82 /* ActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7817BB2284D0854008C2D82 /* XCRemoteSwiftPackageReference "ActivityIndicatorView" */;
+			productName = ActivityIndicatorView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D787BC74284AAEBF00E94780 /* Project object */;
 }
